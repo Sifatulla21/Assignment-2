@@ -39,13 +39,6 @@
     justify-content: center;
     
 }
-.brand-new h5{
-    font-weight: 700;
-    font-size: 54px;  
-    text-align: center;
-    margin-bottom: 33px;
-
-}
 .pt{
     font-weight: 400;
     font-size: 16px;
@@ -73,6 +66,12 @@ border-radius: 8px;
     height: 700px;
     margin: 45px 250px;
 }
+.h-5{
+    font-weight: 700;
+    font-size: 54px;  
+    text-align: center;
+    margin-bottom: 33px;
+}
 /* End of first container */
 
 /* Start of quick list */
@@ -86,15 +85,13 @@ border-radius: 8px;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 24px;
 }
+.img-grid img{
+    width: 342px;
+    height: 342px;  
+}
 .list{
     width: 30%;
     margin-left: 73px;
-}
-.list h5{
-    font-weight: 700;
-    font-size: 54px;  
-    text-align: center;
-    margin-bottom: 33px;
 }
 #ql{
     color: #727272;
@@ -109,13 +106,115 @@ border-radius: 8px;
 }
 /* End of quick list */
 
+/* Features part start */
+.features{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.love{
+    width: 30%;
+}
+.love p{
+    padding: 10px;
+}
+#border-color{
+    border-left: 5px solid #FF900E;
+}
+.feature-box{
+    width: 586px;
+    height: 150px;
+    padding: 20px;
+    margin-top: 30px;
+    background: white;
+    opacity: 0.89;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.feature-box h5{
+    font-weight: 600;
+    font-size: 20px;
+}
+.img-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    margin-left: 146px;
+}
+.exp-btn{
+    margin-top: -100px;
+    margin-left: -50px;
+    width: 250px;
+    height: 120px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 46px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background: #FF900E;
+    border-radius: 8px;
+}
+#exp{
+    font-size: 50px;
+    font-weight: bolder;
+}
+/* Features part end */
+
+/* Fact part start */
+.fact-head{
+    width: 20%;
+    margin-left: 240px;
+}
+.icon-flex{
+    display:flex;
+    justify-content: center;
+    justify-content:space-evenly ;
+}
+.icon-sizing{
+    width: 220px;
+    height: 250px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.icon-sizing img{
+    width: 35px;
+    height: 35px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+.icon-number{
+    color: #424242;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: -30px;
+    padding-bottom: 0px;
+}
+.icon-thumb{
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+    padding-bottom: 30px;
+}
+/* Fact part end */
+
+/* Sponsors part start */
+/* Sponsors part end */
+
 /* Responsive */
 /* Mobile Device */
-@media  (max-width: 576px) {
+@media only Screen and (max-width: 576px) {
     /* first container */
     .container{
         max-width: fit-content;
         overflow-x: hidden;
+
     }
     .nav{
         display: flex;
@@ -143,8 +242,48 @@ border-radius: 8px;
         grid-template-columns: repeat(1,1fr);
         margin-left: 20px;
     }
+    .img-grid img{
+        width: 342px;
+        height: 342px;
+    }
     .list{
         width: 50%;
         margin-left: 100px;
+    }
+    /* Features */
+    .features{
+        max-width: fit-content;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .love-head{
+        width: 80vw;
+        margin-left: 40px;
+    }
+    .feature-box{
+        padding-top: 2px;
+        width:80vw ;
+        height: 50vw;
+    }
+    .img-btn{
+        margin-left: 10px;
+    }
+    .exp-btn{
+        padding-left: 20px;
+    }
+    /* Facts */
+    .facts{
+        width: 100%;
+        margin-right: 30px;
+    }
+    .fact-head{
+        text-align: center;
+        margin-right: 80px;
+    } 
+    .icon-flex{
+        display: grid;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
