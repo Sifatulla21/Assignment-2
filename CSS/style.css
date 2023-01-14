@@ -242,15 +242,17 @@ border-radius: 8px;
         margin-bottom: 5px;
         padding: 10px;
    }
-   button{
-         height: 50px;
-         width: 120px;
+   .sub-btn{
+         height: 40px;
+         width: 100px;
+         text-decoration: none;
+         text-align: center;
          background-color: #ff458f;
          border-radius: 10px;
          color: white;
          font-weight: bolder;
          margin-left: 5px;
-         padding: 9px 25px;
+         padding-top: 20px;
    }
    .inp-fields{
     display: flex;
