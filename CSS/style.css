@@ -5,7 +5,7 @@
 .container{
     background: rgba(255, 144, 14, 0.1);
     width: 1920px;
-    height: 1322px;
+    height: 1270px;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -31,4 +31,73 @@
     text-decoration: none;
     margin-right: 30px;
     margin-top: 53px;
+}
+/* nav part end */
+.brand-new{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.brand-new h5{
+    font-weight: 700;
+    font-size: 54px;  
+    text-align: center;
+    margin-bottom: 33px;
+
+}
+.brand-new p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 33px;
+}
+.link-btn{
+    margin: auto;
+    width: 150px;
+    height: 34px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 21px;
+
+background: #FF900E;
+border-radius: 8px;
+}
+.brand-new img{
+    width: 1440px;
+    height: 700px;
+    margin: 45px 250px;
+}
+/* End of first container */
+
+/* Responsive */
+/* Mobile Device */
+@media  (max-width: 576px) {
+    .container{
+        max-width: fit-content;
+        overflow-x: hidden;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .head2{
+        display: flex;
+        flex-direction: column;
+    }
+    .brand-new img{
+
+        max-width: 70%;
+        max-height: 400px;
+        margin-right: 0px;
+        margin-left: 70px;
+    }
+
+
 }
