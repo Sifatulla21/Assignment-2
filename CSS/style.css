@@ -211,6 +211,24 @@ border-radius: 8px;
     }
 /* Sponsors part end */
 
+/* bonus part start */
+
+/* bonus part end */
+
+/* Footer */
+footer{
+    background: #FFF4E7;
+    border-radius: 8px;
+    position: absolute;
+    width: 1440px;
+    height: 100px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #424242;
+    margin: 240px;
+    padding: 20px;
+}
 /* Responsive */
 /* Mobile Device */
 @media only Screen and (max-width: 576px) {
@@ -218,6 +236,7 @@ border-radius: 8px;
     .container{
         max-width: fit-content;
         overflow-x: hidden;
+        overflow-y: hidden;
 
     }
     .nav{
@@ -285,6 +304,9 @@ border-radius: 8px;
         text-align: center;
         margin-right: 80px;
     } 
+    .icon-sizing{
+        margin-top: 50px;
+    }
     .icon-flex{
         display: grid;
         flex-direction: column;
@@ -293,6 +315,15 @@ border-radius: 8px;
     /* sponsor */
     .sponsors{
         width: 80%;
+    }
+    .icon-flex a{
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    /* footer */
+    footer{
+        width: 100%;
+        margin-left: 0px;
     }
 
 }
